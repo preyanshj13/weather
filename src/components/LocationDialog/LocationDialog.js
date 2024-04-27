@@ -32,7 +32,7 @@ function LocationDialog() {
 
     getData(lati, longi);
     // console.log(longi, lati);
-    navigate("/location");
+    navigate("/weather/location");
   }
 
   // useEffect(() => {

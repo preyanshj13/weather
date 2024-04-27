@@ -28,7 +28,7 @@ function LocationDropdown() {
       setLongi(selectedCity.longitude);
     }
 
-    navigate("/location");
+    navigate("/weather/location");
     console.log(longi, lati);
   }
 
