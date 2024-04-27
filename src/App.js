@@ -14,14 +14,14 @@ function App() {
   const [longi, setLongi] = useState(0);
 
   return (
-    <div className="bg-sky-200 pb-16">
+    <div className="bg-sky-200 pb-16 h-screen">
       <LongContext.Provider value={ {longi, setLongi, lati, setLati} }>
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<LocationDialog />} />
-          <Route path="/1" element={<LocationDropdown />} />
-          <Route path="/location" element={<WeatherBox />} />
+          <Route path="/weather" element={<LocationDialog />} />
+          <Route path="/weather/1" element={<LocationDropdown />} />
+          <Route path="/weather/location" element={<WeatherBox />} />
         </Routes>
       </BrowserRouter>
     </LongContext.Provider>
