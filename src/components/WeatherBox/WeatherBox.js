@@ -21,7 +21,7 @@ function WeatherBox() {
   // console.log(weather)
 
   return (
-    <div className="shadow-lg shadow-slate-800 mt-12 w-[30%] mx-auto flex flex-col items-center bg-white rounded-md">
+    <div className="shadow-lg shadow-slate-800 mt-12 md:w-[40%] lg:w-[30%] mx-auto flex flex-col items-center bg-white rounded-md">
       <h4 className="text-xl pt-10">{weather?.location.name}</h4>
       <h1 className="text-6xl py-4">{weather?.current.temp_c}&#8451;</h1>
       <h5 className="text-lg pb-2">{weather?.current.condition.text} <img src={weather?.current.condition.icon} alt='Weather conditions' /> </h5>
